@@ -41,12 +41,12 @@ rand = { version = "0.8", features = ["small_rng"] }
 approx = "0.4"
 
 ndarray = { version = "0.15", features = ["approx"] }
-ndarray-linalg = { version = "0.15", optional = true }
+ndarray-linalg = { version = "0.16", optional = true }
 sprs = { version = "0.11", default-features = false }
 
 thiserror = "1.0"
 
-criterion = { version = "0.4.0", optional = true}
+criterion = { version = "0.5", optional = true}
 
 [dependencies.serde_crate]
 package = "serde"
@@ -61,7 +61,7 @@ linfa-datasets = { path = "datasets", features = ["winequality", "iris", "diabet
 statrs = "0.16.0"
 
 [target.'cfg(not(windows))'.dependencies]
-pprof = { version = "0.11.0", features = ["flamegraph", "criterion"], optional = true}
+pprof = { version = "0.12.0", features = ["flamegraph", "criterion"], optional = true}
 
 [workspace]
 members = [

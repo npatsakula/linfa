@@ -8,7 +8,7 @@ use linfa::traits::FitWith;
 use linfa::{Float, Label};
 
 // Trait computing predictions for fitted Naive Bayes models
-pub(crate) trait NaiveBayes<'a, F, L>
+pub trait NaiveBayes<'a, F, L>
 where
     F: Float,
     L: Label + Ord,
